@@ -50,9 +50,15 @@
       .bonus {
         display: none;
       }
+      @media only screen and (max-width: 1400px) {
+  .bonus {
+    display: none !important;
+  }
+}
+
     </style>
   </head>
-  <body class="font-lato">
+  <body class="font-lato mx-auto">
     <!-- Header Section -->
     <header>
       <!-- Navbar -->
@@ -277,7 +283,7 @@
       <!-- Deal Section -->
       <section>
         <div class="flex flex-col gap-5 lg:flex-row lg:mx-32 my-16 items-center justify-end">
-          <div class="flex-1 space-y-6 text-center">
+          <div class="flex-1 space-y-6 text-center lg:text-left">
             <h2 class="font-extrabold text-4xl">Deal of the day</h2>
             <p>
               Contrary to popular belief, is not simply random text. It has
@@ -404,7 +410,7 @@
                   />
                 </div>
 
-                <!-- Modal-1 -->
+                
                 <button
                   class="text-[#F85559] text-xl font-bold"
                   onclick="my_modal_5.showModal()"
@@ -415,8 +421,10 @@
                   id="my_modal_5"
                   class="modal modal-bottom sm:modal-middle"
                 >
+                <!-- Modal-1 -->
+
                   <form method="dialog" class="modal-box shadow-xl">
-                    <figure class="">
+                    <di class="">
                       <img
                         src="images/fruit6.png"
                         alt="Shoes"
@@ -511,17 +519,17 @@
                   />
                 </div>
 
-                <!-- Modal-2 -->
                 <button
-                  class="text-[#F85559] text-xl font-bold"
-                  onclick="my_modal_6.showModal()"
+                class="text-[#F85559] text-xl font-bold"
+                onclick="my_modal_6.showModal()"
                 >
-                  Details
-                </button>
-                <dialog
-                  id="my_modal_6"
-                  class="modal modal-bottom sm:modal-middle"
-                >
+                Details
+              </button>
+              <dialog
+              id="my_modal_6"
+              class="modal modal-bottom sm:modal-middle"
+              >
+              <!-- Modal-2 -->
                   <form method="dialog" class="modal-box shadow-xl">
                     <figure class="">
                       <img
@@ -619,17 +627,18 @@
                   />
                 </div>
 
-                <!-- Modal-3 -->
                 <button
-                  class="text-[#F85559] text-xl font-bold"
-                  onclick="my_modal_7.showModal()"
+                class="text-[#F85559] text-xl font-bold"
+                onclick="my_modal_7.showModal()"
                 >
-                  Details
-                </button>
-                <dialog
-                  id="my_modal_7"
-                  class="modal modal-bottom sm:modal-middle"
-                >
+                Details
+              </button>
+              <dialog
+              id="my_modal_7"
+              class="modal modal-bottom sm:modal-middle"
+              >
+
+              <!-- Modal-3 -->
                   <form method="dialog" class="modal-box shadow-xl">
                     <figure class="">
                       <img
@@ -726,17 +735,18 @@
                   />
                 </div>
 
-                <!-- Modal-4 -->
                 <button
-                  class="text-[#F85559] text-xl font-bold"
-                  onclick="my_modal_8.showModal()"
+                class="text-[#F85559] text-xl font-bold"
+                onclick="my_modal_8.showModal()"
                 >
-                  Details
-                </button>
-                <dialog
-                  id="my_modal_8"
-                  class="modal modal-bottom sm:modal-middle"
-                >
+                Details
+              </button>
+              <dialog
+              id="my_modal_8"
+              class="modal modal-bottom sm:modal-middle"
+              >
+
+              <!-- Modal-4 -->
                   <form method="dialog" class="modal-box shadow-xl">
                     <figure class="">
                       <img
@@ -809,12 +819,12 @@
     <!-- Meet The Team Section -->
     <section class="lg:mx-32 mx-6 z-1 mt-40 rounded-full">
       <div
-        class="hero min-h-screen"
-        style="background-image: url(images/banner1.png)"
+        class="hero bg-cover bg-no-repeat"
+        style="background-image: url(images/banner1.png); background-size: cover !important; background-repeat: no-repeat;"
       >
         <div class="hero-overlay bg-opacity-40"></div>
         <div class="hero-content text-center text-neutral-content">
-          <div class="lg:px-64">
+          <div class="">
             <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
             <p class="mb-5">
               Contrary to popular belief, is not simply random text. It has
@@ -823,7 +833,7 @@
             </p>
 
             <!-- All Cards -->
-            <div class="meet-meet-main grid lg:grid-flow-col gap-40">
+            <div class="meet-meet-main grid md:grid-cols-2 lg:grid-cols-4 gap-40">
               <!-- Card-1 -->
               <div class="card">
                 <figure class="px-10 pt-10">
@@ -1010,7 +1020,7 @@
         </div>
 
         <!-- 2nd Child -->
-        <div class="ChooseUsDetails order-1 lg:order-2">
+        <div class="ChooseUsDetails order-1 lg:order-2 px-6">
           <img src="images/whychoose1.png" alt="whychoose" />
         </div>
 
